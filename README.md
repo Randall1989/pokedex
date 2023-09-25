@@ -85,7 +85,20 @@ yarn start:dev
 6. Recustruir los datos de la db
 ```
 http://localhost:3000/api/v2/seed
+
+# Liberar en Produccion
+1. Crear el archivo 
 ```
+.env.prod
+```
+2. Llenar las variable de entorno de prod en el file env.prod
+3. Crear la nueva imagen
+```
+.env.prod
+```
+docker-compose -f docker-compose.prod.yaml --env-file .env.prod up --build
+```
+
 ## Support
 
 Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
